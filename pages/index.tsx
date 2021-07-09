@@ -31,7 +31,10 @@ export default function Home() {
       <form>
         {preview ? (
           <img 
-            src={preview} 
+            src={preview}
+            onClick={() => {
+              setImage(null)
+            }} 
             style={{ 
               objectFit: "cover",
               width: "200px",
